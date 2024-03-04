@@ -1,0 +1,7 @@
+{
+  "name": "RetailManagementSystem",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
