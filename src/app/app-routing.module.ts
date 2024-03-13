@@ -15,7 +15,11 @@ const routes: Routes = [
   {
     path:'login',
     component: LoginPage
+  },  {
+    path: 'registration',
+    loadChildren: () => import('./pages/registration/registration.module').then( m => m.RegistrationPageModule)
   }
+
 ];
 
 @NgModule({
