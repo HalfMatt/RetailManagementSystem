@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>registration</ion-title>
+    <ion-title>Registration</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +10,14 @@
       <ion-title size="large">registration</ion-title>
     </ion-toolbar>
   </ion-header>
+  <!-- firstName, mIddleName, lastName, contactNumber, emailAddress, username, password, confirmPassword -->
+  <ion-input label="First Name" fill="outline" placeholder="Enter text" [(ngModel)]="firstName"></ion-input>
+  <ion-input label="Middle Name" fill="outline" placeholder="Enter text" [(ngModel)]="middleName"></ion-input>
+  <ion-input label="Last Name" fill="outline" placeholder="Enter text" [(ngModel)]="lastName"></ion-input>
+  <ion-input label="Contact Number" fill="outline" placeholder="Enter text" [(ngModel)]="contactNumber"></ion-input>
+  <ion-input label="Email Address" fill="outline" placeholder="Enter text" [(ngModel)]="emailAddress"></ion-input>
+  <ion-input label="Username" fill="outline" placeholder="Enter text" [(ngModel)]="username"></ion-input>
+  <ion-input label="Password" fill="outline" placeholder="Enter text" type="password" [(ngModel)]="password"></ion-input>
+  <ion-input label="Confirm Password" fill="outline" placeholder="Enter text" type="password" [(ngModel)]="confirmPassword"></ion-input>
+  <ion-button expand="full" (click)="showToast()">Register</ion-button>
 </ion-content>
